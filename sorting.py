@@ -14,7 +14,7 @@ def read_data(file_name):
 
     with open(file_path, 'r') as file_csv:
         reader = csv.DictReader(file_csv)
-        data = []
+        data = {}
 
         for row in reader:
             for header, value in row.items():
